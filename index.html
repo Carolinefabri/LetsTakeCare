@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="public/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de IMC</h1>
+        <label for="weight">Peso (kg):</label>
+        <input type="number" id="weight" step="0.01" required>
+        <label for="height">Altura (m):</label>
+        <input type="number" id="height" step="0.01" required>
+        <button id="calculate-btn">Calcular</button>
+        <button id="clear-btn" class="clear-button">Limpar</button>
+        <div id="result"></div>
+    </div>
+    <div class="container">
+        <h2 id="question1">What is BMI?</h2>
+        <h2 id="question2">Why is BMI important for health?</h2>
+        <h2 id="question3">How to calculate BMI?</h2>
+        <h2 id="question4">What are the BMI categories?</h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
