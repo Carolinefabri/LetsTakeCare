@@ -47,3 +47,41 @@ button {
 .clear-button {
     margin-right: 10px; 
 }
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    label, input {
+        display: block;
+        width: 100%;
+    }
+    button {
+        width: 100%;
+    }
+    #question1, #question2, #question3, #question4 {
+        font-size: 1.5rem;
+    }
+}
+
+/* CSS styles here */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+label, input, button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#result {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+h2 {
+    cursor: pointer;
+}
