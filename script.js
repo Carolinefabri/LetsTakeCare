@@ -1,19 +1,68 @@
+
+// script.js
+// Link para o arquivo CSS personalizado
+const linkToStyles = document.createElement("link");
+linkToStyles.rel = "stylesheet";
+linkToStyles.href = "styles.css";
+document.head.appendChild(linkToStyles);
+
 // Prompt functions for the questions
 document.getElementById("question1").addEventListener("click", function() {
-    alert("BMI stands for Body Mass Index. It is a measure that relates a person's weight to their height and is commonly used to assess body weight and health.");
+  Swal.fire({
+    title: "What is BMI?",
+    text: "BMI stands for Body Mass Index. It is a measure that relates a person's weight to their height and is commonly used to assess body weight and health.",
+    icon: "success",
+    confirmButtonColor: "#0B666A",
+    confirmButtonText: "OK"
+  });
 });
 
 document.getElementById("question2").addEventListener("click", function() {
-    alert("BMI is important for health because it helps identify whether a person is underweight, normal weight, overweight, or obese. It can be a predictor of health risks such as cardiovascular diseases, diabetes, and hypertension.");
+  Swal.fire({
+    title: "Why is BMI important for health?",
+    text: "BMI is important for health because it helps identify whether a person is underweight, normal weight, overweight, or obese. It can be a predictor of health risks such as cardiovascular diseases, diabetes, and hypertension.",
+    icon: "success",
+    confirmButtonColor: "#0B666A",
+    confirmButtonText: "OK"
+  });
 });
 
 document.getElementById("question3").addEventListener("click", function() {
-    alert("To calculate BMI, divide your weight in kilograms by your height in meters squared. The formula is: BMI = weight (kg) / height^2 (m²).");
+  Swal.fire({
+    title: "How to calculate BMI?",
+    text: "To calculate BMI, divide your weight in kilograms by your height in meters squared. The formula is: BMI = weight (kg) / height^2 (m²).",
+    icon: "success",
+    confirmButtonColor: "#0B666A",
+    confirmButtonText: "OK"
+  });
 });
 
 document.getElementById("question4").addEventListener("click", function() {
-    alert("BMI categories are used to classify individuals based on their BMI values. The categories are: underweight (BMI < 18.5), normal weight (18.5 ≤ BMI < 24.9), overweight (25 ≤ BMI < 29.9), obesity class I (30 ≤ BMI < 34.9), obesity class II (35 ≤ BMI < 39.9), and obesity class III (BMI ≥ 40).");
+  Swal.fire({
+    title: "What are the BMI categories?",
+    html: `
+      <ul>
+        <li>Underweight (BMI &lt; 18.5)</li>
+        <li>Normal weight (18.5 ≤ BMI &lt; 24.9)</li>
+        <li>Overweight (25 ≤ BMI &lt; 29.9)</li>
+        <li>Obesity Class I (30 ≤ BMI &lt; 34.9)</li>
+        <li>Obesity Class II (35 ≤ BMI &lt; 39.9)</li>
+        <li>Obesity Class III (BMI ≥ 40)</li>
+      </ul>
+    `,
+    icon: "success",
+    confirmButtonColor: "#0B666A",
+    confirmButtonText: "OK"
+  });
 });
+
+// Restante do seu código JavaScript
+// ...
+
+
+
+
+
 
 // BMI calculation function
 document.getElementById("calculate-btn").addEventListener("click", function() {
@@ -30,7 +79,15 @@ document.getElementById("calculate-btn").addEventListener("click", function() {
     resultDiv.textContent = `Your BMI is: ${bmi.toFixed(2)} (${getBMICategory(bmi)})`;
 });
 
-// Clear button event
+
+
+
+
+
+
+
+
+// clear button
 document.getElementById("clear-btn").addEventListener("click", function() {
     document.getElementById("weight").value = "";
     document.getElementById("height").value = "";
