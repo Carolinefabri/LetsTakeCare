@@ -1,8 +1,41 @@
+@media only screen and (max-width: 600px) {
+    .container {
+      max-width: 90%;
+      margin: 50px auto;
+      padding: 10px;
+    }
+    
+    .question {
+      max-width: 90%;
+      margin: 10px auto;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    label, input, button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    button {
+      padding: 8px;
+    }
+  }
+  
+
 body {
     font-family: Arial, sans-serif;
     background: url('/public/images/cover.jpg') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
+    margin-top: 30px;
 }
 
 
@@ -11,6 +44,7 @@ body {
     max-width: 400px;
     margin: 100px auto;
     padding: 20px;
+  
     background-color:  rgb(252, 212, 98) ;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -144,5 +178,31 @@ h2 {
   
   .swal2-confirm:hover {
     background-color:  #0B666A;
+  }
+  
+
+  /* styles.css */
+
+/* Estilos para telas de dispositivos móveis */
+
+/* styles.css */
+
+footer {
+    
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 0 0 10px rgba(11, 102, 106, 0.8); /* Efeito neon - ajuste o raio do blur conforme desejado */
+    font-weight: bold; /* Texto em negrito */
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Estilo para o ícone */
+  footer i {
+    margin-right: 5px; /* Espaçamento entre o ícone e o texto */
+    font-size: 18px; /* Tamanho do ícone */
   }
   
